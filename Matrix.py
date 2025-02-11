@@ -12,7 +12,14 @@ Output: [
     [0,0,0],
     [1,0,1]]
 
-
+Input: matrix = [
+    [0,1,2,0],
+    [3,4,5,2],
+    [1,3,1,5]]
+Output: [
+    [0,0,0,0],
+    [0,4,5,0],
+    [0,3,1,0]]
 
 
 
@@ -31,7 +38,7 @@ n_linha_seg_0 = -1
 n_coluna_seg_0 = -1
 linha_total = 0
 
-# isso aqui é pra definir o máximo das linha, é tipo fazer um len(linha) tlgd
+# isso aqui é pra definir o máximo das linhas horizontais, é tipo fazer um len(linha) tlgd
 for linha in matrix:
     linha_total+=1
 # isso aqui é pro codigo saber onde o primeiro "0" está localizado, pra assim ele saber onde colocar os "0"s
