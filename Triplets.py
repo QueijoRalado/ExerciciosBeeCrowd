@@ -21,6 +21,9 @@ Explanation: The only possible triplet does not sum up to 0.
 Input: nums = [0,0,0]
 Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
+
+https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/776/
+
 '''
 
 numeroz = [-5,-4,-3, -2, -1, 0, 1, 2, 3, 4, 5]

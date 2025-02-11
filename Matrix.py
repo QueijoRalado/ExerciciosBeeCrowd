@@ -21,7 +21,7 @@ Output: [
     [0,4,5,0],
     [0,3,1,0]]
 
-
+https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/array-and-strings/777/
 
 
 
