@@ -27,9 +27,9 @@ https://leetcode.com/explore/interview/card/top-interview-questions-medium/103/a
 
 '''
 matrix = [
-    [0, 2, 9, 0],
+    [6, 0, 9, 7],
     [4, 2, 6, 9],
-    [7, 8, 4, 6],
+    [7, 8, 0, 6],
     [1, 2, 3, 6]
 ]
 n_linha = -1
