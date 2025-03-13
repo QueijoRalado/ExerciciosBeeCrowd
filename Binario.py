@@ -37,7 +37,6 @@ for n in range(0,2):
     binariox_falso = map(str, binariox_incompletos)
     binariox = delimitador.join(binariox_falso)
     binariox = int(binariox)
-    print(binariox)
     resultado = resultado+binariox
 
 resultado_str = str(resultado)
