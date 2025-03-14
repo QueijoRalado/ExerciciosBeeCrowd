@@ -27,36 +27,21 @@ Output: [["a"]]
 QueijoRalado falando, esse exercício foi um inferno na terra para terminar (não terminei ainda, apenas escrevei que "foi" pois eu vou terminar isso aqui na base do ódio)
 '''
 
-coisax = ["eat","tea","tan","ate","nat","bat"]
-coisax2 = coisax.copy()
+coisax_nao_apaga = ["eat","tea","tan","ate","nat","bat"]
+coisax_apaga = ["eat","tea","tan","ate","nat","bat"]
+final = []
+n=0
 
-anagramas_falso = []
-anagramas = []
-anagramas_definitivo = []
-checar_escolhida = sorted(coisax[0])
-checagem = 0
-cheio = False
-
-
-n2=0
-while len(coisax)!=0:
+for n in range(0, len(coisax_apaga)):
+    correto = []
     n2=0
-    palavra_escolhida = sorted(coisax[0])
-    print("palavra escolhida", palavra_escolhida)
-    while n2!=len(coisax):
-        print("n2", n2)
-        if palavra_escolhida==sorted(coisax[n2]):
-            anagramas_falso.append(coisax[n2])
-            coisax.pop(n2)
-            n2-=1
-            print("falso", anagramas_falso)
+    palavra_esc=sorted(coisax_apaga[n])
+    while n2!=len(coisax_apaga):
+        if palavra_esc==sorted(coisax_apaga[n2]):
+            correto.append(coisax_apaga[n2])
         n2+=1
-        if (n2==len(coisax)):
-            cheio=True
-
-    if cheio:
-        anagramas_definitivo.append(anagramas_falso)
-    print("definitivo 1", anagramas_definitivo)
-    while len(anagramas_falso)!=0:
-        anagramas_falso.pop()
-    print("definitivo 2", anagramas_definitivo)
+    if correto in final:
+        pass
+    else:
+        final.append(correto)
+print(final)

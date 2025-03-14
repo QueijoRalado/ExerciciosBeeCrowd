@@ -37,20 +37,27 @@ for n in range(0,2):
     binariox_falso = map(str, binariox_incompletos)
     binariox = delimitador.join(binariox_falso)
     binariox = int(binariox)
-    print(binariox)
+    if n==0:
+        print(f"   {binariox} ({numerox[n]})")
+    elif n==1:
+        print(f" + {binariox} ({numerox[n]})")
+
     resultado = resultado+binariox
 
 resultado_str = str(resultado)
-resultado_real_caralho = []
+resultado_real = []
 
-for letra_fodida in resultado_str:
-    letra_fodida=int(letra_fodida)
-    if letra_fodida>1:
-        resultado_real_caralho.append(0)
+print(f"   {resultado_str}")
+
+for letra_escolhida in resultado_str:
+    letra_escolhida=int(letra_escolhida)
+    if letra_escolhida>1:
+        resultado_real.append(0)
     else:
-        resultado_real_caralho.append(letra_fodida)
+        resultado_real.append(letra_escolhida)
 
-resultado_str = map(str, resultado_real_caralho)
+resultado_str = map(str, resultado_real)
 resultado = delimitador.join(resultado_str)
 
-print(int(f"0b{resultado}", 2))
+resultado_que_mostra = (int(f"0b{resultado}", 2))
+print(f" = {resultado} ({resultado_que_mostra})")
