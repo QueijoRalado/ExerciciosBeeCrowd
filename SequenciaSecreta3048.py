@@ -13,7 +13,7 @@ for numero in numeros:
     print(f"                 {numero}")
     print(f"                          {numeros[numero_adiante]} adiante")
     print(numeros[numero_atras]==numero and numeros[numero_adiante]==numeros[numero_atras])
-    if numeros[numero_atras]==numero_comum and numeros[numero_adiante]==numeros[numero_atras]:
+    if numeros[numero_atras]==numero and numeros[numero_adiante]==numeros[numero_atras]:
         numeros[numero_adiante-1] = f"({numero})"
         marcados+=1
         print("PASSEI SEGUNDO!!!")
